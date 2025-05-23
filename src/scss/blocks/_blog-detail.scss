@@ -1,0 +1,65 @@
+.blog-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 0;
+
+    .default {
+        margin: 0;
+    }
+}
+
+.blog-detail_section-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: grey;
+    opacity: .75;
+    font-family: "Playfair Display", serif;
+}
+
+.swiperBlogDetail_container {
+    margin: 0 auto;
+    max-width: 760px;
+
+    .swiper-pagination {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .sw-btn_prev {
+        left: -40px;
+    }
+
+    .sw-btn_next {
+        right: -40px;
+    }
+
+    .sw-btn {
+        background-color: rgb(14, 26, 62);
+    }
+
+    .swiper-pagination-bullet-active {
+        background: rgb(14, 26, 62) !important;
+    }
+}
+
+.swiperBlogDetail {
+
+    .swiper-slide {
+        width: 100%;
+        height: auto;
+
+        img {
+            object-fit: contain;
+            object-position: center;
+            aspect-ratio: 760/983;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .blog-detail {
+        gap: 20px;
+    }
+}
