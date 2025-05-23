@@ -44,7 +44,10 @@
         }
 
         .swiper-slide_img {
-            height: 45%;
+            height: 75%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
             img {
                 height: 100%;
